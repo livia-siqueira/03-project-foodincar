@@ -1,0 +1,21 @@
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: #b94517;
+}
+
+.header{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2px auto;
+}
+
+.header h1{
+    color: white;
+}
+
+.header button {
+    height: 50px;
+}

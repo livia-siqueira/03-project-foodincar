@@ -1,0 +1,11 @@
+.list {
+    background-color: white;
+    width: 80%;
+    margin: 180px auto;
+    border-radius: 30px;
+
+}
+
+.list ul {
+    padding: 0;
+}

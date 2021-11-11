@@ -1,0 +1,49 @@
+
+    
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #4d1601;
+    color: white;
+    padding: 0.75rem 3rem;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.spanCar {
+    background-color: #b94517;
+    border-radius: 20px;
+    margin-left: 15px;
+    padding: 8px 15px;
+}
+
+.actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #8a2b06;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #5a1a01;
+    border-color: #5a1a01;
+    color: white;
+  }
+  
+  .actions .button--alt {
+    color: #8a2b06;
+  }
+  
+  .actions .button {
+    background-color: #8a2b06;
+    color: white;
+  }

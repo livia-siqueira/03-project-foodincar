@@ -1,0 +1,17 @@
+.itensLeft h2{
+    margin: 0;
+}
+
+.itensLeft{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.description {
+    font-style: italic;
+}
+
+.price{
+    color: #ad5502;
+    font-weight: bold;
+}

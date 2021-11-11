@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Header } from '../src/components/Header/Header';
+import { ListFoods } from './listFoods/ListFoods';
+import { ModalInformation } from './ModalInformation/ModalInformation';
+import { ModalCar } from './components/ModalCar/CardModal.js';
+import { useState } from 'react';
+import CartProvider  from '../src/source/CartProvider';
+
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+
+  const showModalHandler = () => {
+    setShowModal(true);
+  }
+
+  const backModalHandler = () => {
+    setShowModal(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      {showModal && <ModalCar closeModal={backModalHandler} />}
+      <Header onModal={showModalHandler} />
+      <ModalInformation />
+      <ListFoods />
+    </CartProvider>
   );
 }
 

@@ -1,0 +1,53 @@
+
+ul {
+    padding: 0;
+}
+
+.li {
+   list-style: none;
+   border-bottom: 2px solid #b94517;
+   height: 5rem;
+   display: flex;
+   justify-content: space-between;
+   justify-items: center;
+   align-items: center;
+   padding-bottom: 25px;
+}
+
+.items_left p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.control_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.price{
+    color:#b94517;
+    font-weight: bold;
+}
+.button {
+    background-color: transparent;
+    margin-left: 4px;
+    width: 4rem;
+    height: 2.5rem;
+    border: 1px solid #b94517;
+    font-size: 2rem;
+    color:  #b94517;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.qtdFoods {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    color: black;
+}
